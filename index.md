@@ -4,7 +4,6 @@
 # H1
 ## H2
 [Link](https://harshil201003.github.io/cse15l-lab-reports/index.html)
-![Image](http://url/a.png)
 ![Image](image.png)
 
 * List1
