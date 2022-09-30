@@ -102,6 +102,18 @@ This completes the process. Now you should be able to log in to the server witho
 Now we will try speeding up the process through some small "tricks". One of these tricks includes writing the command in quotes at the end of the ssh to run it directly after launching.
 
 
+![speed](speed.png)
+
+
+This is one way to speed up the process. Another way includes using semicolon to connect commands that you would usually write in different lines. 
+
+
+---
+
+
+This concludes the lab report.
+
+
 
 
 
