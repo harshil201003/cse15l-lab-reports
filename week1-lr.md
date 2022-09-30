@@ -36,7 +36,25 @@ Entering this will prompt you for your password. Enter the password (you wont be
 ## Step 3 - Trying some commands
 
 
-We have successfully connected to ieng6! Now its time to try out some commands.
+We have successfully connected to ieng6! Now its time to try out some commands. I cannot connect to my account yet, so I am using the screenshots from the class. I tried out the ls code and it listed files on the UCSD Computer. You can try out other stuff as well!
+
+
+![ls](ls.png)
+
+
+## Step 4 - Moving files with scp
+
+
+Here we will discuss how to upload files from your device on the external computer. For that we need to use the code scp.
+
+
+`scp <File Name> cs15lfa22<your username last 2>@ieng6.ucsd.edu:~/`
+
+
+This uploads the file online. However, you will not be logged in. First log in and then see the file you uploaded using the ls command.
+
+
+
 
 
 
