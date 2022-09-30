@@ -54,6 +54,50 @@ Here we will discuss how to upload files from your device on the external comput
 This uploads the file online. However, you will not be logged in. First log in and then see the file you uploaded using the ls command.
 
 
+![scp](scp.png)
+
+
+## Step 5 - Setting an SSH key
+
+
+Entering your password every singl time you log in or scp a file from your device to the external device can get tedious. To make that process easier, we will talk about SSH keys. This process will save the password on your device and bypass the password entering steps.
+
+
+```
+harshil@Harshils-MacBook-Pro ~ % ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (Enter your own location --->) (/Users/harshil/.ssh/id_rsa):/Users/harshil/.ssh/id_rsa
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /Users/harshil/.ssh/id_rsa
+Your public kev has been saved in /Users/harshil/.ssh/id_rsa.pub
+The key fingerprintiS:
+SHA256: YHPdqgozNHeIA6N4x6gtB5vJPcAaI16sLakueAkMtJQ harshil@arshils-MacBook-Pro.local
+```
+
+Typing this will create a key on your device. Now, we will have to generate a similar structure on the server.
+
+
+After logging into your account through ssh, type in the following - 
+
+
+`mkdir .ssh`
+
+
+Then logout from the server and type the following on your device
+
+
+`scp (Location of your ssh file) ---> (/Users/harshil/.ssh/id_rsa.pub) cs15lfa22@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+
+
+This completes the process. Now you should be able to log in to the server without entering the password every time. A sample image has been provided below.
+
+
+## Step 6 - 
+
+
+
+
 
 
 
