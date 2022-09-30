@@ -93,7 +93,16 @@ Then logout from the server and type the following on your device
 This completes the process. Now you should be able to log in to the server without entering the password every time. A sample image has been provided below.
 
 
-## Step 6 - 
+![Key](key.png)
+
+
+## Step 6 - Optimizing Remote Running
+
+
+Now we will try speeding up the process through some small "tricks". One of these tricks includes writing the command in quotes at the end of the ssh to run it directly after launching.
+
+
+
 
 
 
