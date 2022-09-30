@@ -7,8 +7,16 @@ In this lab, we will be talking about setting up VSCode and Remote Connecting to
 You will be installing VSCode to access the terminal to remotely connect to ieng6, the UCSD Computer. For that access the website following website -
 
 
-[VSCode](https://code.visualstudio.com/)
+[https://code.visualstudio.com/](https://code.visualstudio.com/)
 
 
 Complete all the setup steps to install VSCode. You should see the following screen after the installation process is complete -
+
+
+![VSCode Startup Screen](VSCode.png)
+
+
+
+
+
 
