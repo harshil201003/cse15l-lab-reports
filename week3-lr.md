@@ -68,3 +68,6 @@ class SearchEngine
 ```
 
 
+This code is a simple search engine that finds strings in the array of the website conting the key words. 
+
+
