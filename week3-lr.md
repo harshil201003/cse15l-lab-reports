@@ -6,7 +6,7 @@
 
 The code for the Search Engine is:
 
-`
+```
 import java.io.IOException;
 import java.net.URI;
 import java.util.ArrayList;
@@ -64,6 +64,7 @@ class SearchEngine
 
         Server.start(port, new SearchEngineMaker());
     }
-}`
+}
+```
 
 
