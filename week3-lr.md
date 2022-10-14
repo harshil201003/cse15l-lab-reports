@@ -72,7 +72,7 @@ This code is a simple search engine that finds strings in the array of the websi
 `/add?s=pineapple`  at the end of the query adds the string to the array.
 
 
-![Pineapple](add pineapple.png)
+![Pineapple](pine.png)
 
 
 Another string is added here.
