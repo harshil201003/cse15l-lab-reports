@@ -132,7 +132,7 @@ if (url.getPath().contains("/search")){
 Just like add, it separates the query into two and after the criteria for using search are met, it traverses through the "added" array and uses the get method to check if the words mentioned in the query of the URL match the ones in the array. Once this process is done, it returns the words that match.
 
 
-The most important value of this code is the selection of the newly separated string's second argument. That is what defines what word needs to be added or searched. If that changes, there will be nothing to add. However, the first argument, the "s" before the equals makes sure that the argument being added is a string. So if hat is changed, the if statement will fail and the code will not progress. 
+The most important value of this code is the selection of the newly separated string's second argument. That is what defines what word needs to be added or searched. If that changes, there will be nothing to add. However, the first argument, the "s" before the equals makes sure that the argument being added is a string. So if that is changed, the if statement will fail and the code will not progress. 
 
 
 
