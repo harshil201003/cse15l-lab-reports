@@ -52,8 +52,6 @@ class SearchEngineMaker implements URLHandler
     }
 }
 
-
-
 class SearchEngine
 {
     public static void main(String[] args) throws IOException{
