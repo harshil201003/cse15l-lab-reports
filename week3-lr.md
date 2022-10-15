@@ -136,4 +136,74 @@ The most important value of this code is the selection of the newly separated st
 
 
 
+## Part 2 -  Bugs
+
+
+1) The first bug we will be talking about is "reverseInPlace" in ArrayExamples.java
+
+
+This code reverses the array without creating a new array. There was a bug in the code however -
+
+
+This bug made it so that the first half of the code gets reversed, but it copies the code to the same array while reversing it. So, the scond half of the code stays as it was.
+
+![Error](errorArray.png)
+
+
+The following test was run - 
+
+
+![test](testArray.png)
+
+
+This test resulted in the following error - 
+
+
+![res](testRes.png)
+
+
+Hence, the fixed code was -
+
+
+
+![fixed](fixedArray.png)
+
+
+The test results clearly state that the fist half of the code could not be reversed. Hence, the fix first saves the value of the first part and then switches with the same rank from the back.
+
+
+
+2) The second bug discussed here is the Filter method from list examples.
+
+
+This code takes in a string checker and then checks through the list for any elements that match the criteria, and is supposed to return a new list with the same order, but reverses the order. I ran the following test that led to the error -
+
+
+![Test](listTest.png)
+
+
+The output was - 
+
+
+![res](listRes.png)
+
+
+The code was fixed by just removing the 0 while adding an element to the new list. So now the new elements are added in the back of the list so the original order remains.
+
+
+![fix](listFix.png)
+
+
+Thus, the order being reversed in the result has been fixed!!
+
+---
+
+
+This concludes the lab report!
+
+
+
+
+
+
 
