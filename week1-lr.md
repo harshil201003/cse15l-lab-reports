@@ -36,10 +36,19 @@ Entering this will prompt you for your password. Enter the password (you wont be
 ## Step 3 - Trying some commands
 
 
-We have successfully connected to ieng6! Now its time to try out some commands. I cannot connect to my account yet, so I am using the screenshots from the class. I tried out the ls code and it listed files on the UCSD Computer. You can try out other stuff as well!
+We have successfully connected to ieng6! Now its time to try out some commands. I cannot connect to my account yet, so I am using the screenshots from the class. I tried out some of the codes below!
 
 
 ![ls](ls.png)
+
+
+![lsLat](lsLat.png)
+
+
+![cat](cat.png)
+
+
+![lsA](lsA.png)
 
 
 ## Step 4 - Moving files with scp
