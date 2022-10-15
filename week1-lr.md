@@ -66,6 +66,18 @@ This uploads the file online. However, you will not be logged in. First log in a
 ![scp](scp.png)
 
 
+We will talk about the WhereAmI.java file now. Firstly, the file is run locally
+
+
+![local](localW.png)
+
+
+The file shows the current location, which is my local device. After scp'ing the file to the server, when I run the server it shows the location of the user, which is on the server - 
+
+
+![server](serverW.png)
+
+
 ## Step 5 - Setting an SSH key
 
 
