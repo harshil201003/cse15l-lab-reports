@@ -67,20 +67,50 @@ The terminal code has been provided below.
       ```
 
 
-2. The second function we will be talking about here will be `grep -i`. It is case insensitive. It finds all the words depite the capitalization. It can be really helpful because it helps eliminate the chances of not finding a certain element because of capitalization. Examples have been provided below - 
+2. The second function we will be talking about here will be `grep -i`. It is a case insensitive function. It finds all the words depite the capitalization. It can be really helpful because it helps eliminate the chances of not finding a certain element because of capitalization. Examples have been provided below - 
 
 
-<img width="647" alt="Screenshot 2022-10-31 at 7 02 58 PM" src="https://user-images.githubusercontent.com/114549600/199142932-8c7b596f-8d4c-4db2-a0c5-08c8e03b0d5e.png">
+    + In the first example, we search for the word "FIVE", and despite the search string beig capitalized, the terminal results with an output.
 
 
-<img width="707" alt="Screenshot 2022-10-31 at 7 05 14 PM" src="https://user-images.githubusercontent.com/114549600/199142945-6f969dc0-b16b-488f-b31c-57d3afce23b0.png">
+        `grep -i "FIVE" technical/911report/preface.txt`
+        
+        The output window is as follows -
+        
+        
+        ```
+                        people for their consideration. Ten Commissioners-five Republicans and five
+        ```
+        
+        
+    + In the second example, we search for "allocation" -
 
 
-<img width="1712" alt="Screenshot 2022-10-31 at 7 06 04 PM" src="https://user-images.githubusercontent.com/114549600/199142958-866eb527-5b89-4ee5-be68-cc708e44b768.png">
+        `grep -i "AllOCAtion" technical/911report/preface.txt`
+        
+        The output window was -
+        
+        `                aviation, the role of congressional oversight and resource allocation, and other`
+        
+        
+    + The third example involves searching for "CLEVELAND?"
 
 
+        `grep -i "CLEVELAND?" technical/911report/chapter-1.txt`
+        
+        
+        The output was - 
+        
+        
+        ```
+            The controller responded, seconds later: "Somebody call Cleveland?"This was followed by a second radio transmission, with sounds of screaming. The Cleveland Center controllers began to try to identify the possible source of the transmissions, and noticed that United 93 had descended some 700 feet. The controller attempted again to raise United 93 several times, with no response. At 9:30, the controller began to poll the other flights on his frequency to determine if they had heard the screaming; several said they had.
+        ```
 
-The third function we willbe discussing here is `grep -r`. It looks through a sub-directory with txt files and finds matches. Examples are given below -
+
+3. The third function we willbe discussing here is `grep -r`. It looks through a sub-directory with txt files and finds matches. It can be very useful when finding a specific string throughout a big subdirectory. This can be used by employers looking for specific words while hiring individuals or by universities looking at appications Examples have been provided below - 
+
+
+    + The first example involves searching for 
 
 
 <img width="962" alt="Screenshot 2022-10-31 at 7 27 27 PM" src="https://user-images.githubusercontent.com/114549600/199145351-cc96f74d-58b7-40ff-94d6-3dc43e1b8413.png">
@@ -93,7 +123,7 @@ The third function we willbe discussing here is `grep -r`. It looks through a su
 
 
 
-This concludes the laab report.
+This concludes the lab report.
 
 
 
