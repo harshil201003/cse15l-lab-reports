@@ -12,7 +12,7 @@ for the string "lemon", it will only return the instances of the word "lemon" in
 The terminal code has been provided below.
 
 
-  `grep -w "string" (filename)`
+    `grep -w "string" (filename)`
 
 
   + For the first example, the input command was as follows - 
@@ -39,40 +39,28 @@ The terminal code has been provided below.
     ```
 
 
-    The screenshot of the terminal output window has been given below -
-
-
-
-<img width="1714" alt="grep-w1" src="https://user-images.githubusercontent.com/114549600/199139498-1773947c-60ef-4490-befe-52c46a1808bd.png">
-
 
   + Another example of searching a part of the word -
 
 
-  `grep -w "Pres" technical/911report/preface.txt`
+      `grep -w "Pres" technical/911report/preface.txt`
 
 
-This does not reslt in an answer because there is no complete word "Pres" in preface.txt
+
+      This does not reslt in an answer because there is no complete word "Pres" in preface.txt
 
 
-`grep -w "President" technical/911report/preface.txt`
+      `grep -w "President" technical/911report/preface.txt`
 
 
-The output window was -
+      The output window was -
 
 
-```
-                the President of the United States, the United States Congress, and the American
-            To answer these questions, the Congress and the President created the National
-                have been superb. We thank the Congress and the President. Executive branch agencies
-```
-
-
-A screenshot has been provided below
-
-
-<img width="711" alt="Screenshot 2022-10-31 at 6 23 34 PM" src="https://user-images.githubusercontent.com/114549600/199139671-7d2eee5f-e7e3-4931-8f9c-9eb4d7a70eae.png">
-
+      ```
+                      the President of the United States, the United States Congress, and the American
+                  To answer these questions, the Congress and the President created the National
+                      have been superb. We thank the Congress and the President. Executive branch agencies
+      ```
 
 
 The second function we will be talking about here will be `grep -i`. It is case insensitive. It finds all the words depite the capitalization. It can be really helpful because it helps eliminate the chances of not finding a certain element because of capitalization. Examples have been provided below - 
