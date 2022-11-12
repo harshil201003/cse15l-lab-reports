@@ -110,16 +110,65 @@ The terminal code has been provided below.
 3. The third function we willbe discussing here is `grep -r`. It looks through a sub-directory with txt files and finds matches. It can be very useful when finding a specific string throughout a big subdirectory. This can be used by employers looking for specific words while hiring individuals or by universities looking at appications Examples have been provided below - 
 
 
-    + The first example involves searching for 
+    + The first example involves searching for the word "nonterrorists" in 911report
 
 
-<img width="962" alt="Screenshot 2022-10-31 at 7 27 27 PM" src="https://user-images.githubusercontent.com/114549600/199145351-cc96f74d-58b7-40ff-94d6-3dc43e1b8413.png">
+        `grep -r "nonterrorists" ./technical/911report/*`
+        
+        
+        The output window was - 
+        
+        
+        ```
+        ./technical/911report/chapter-13.5.txt:                Medical Examiner's Office, the WTC attacks killed 2,749 nonterrorists, including
+        ./technical/911report/chapter-13.5.txt:                Pentagon attack killed 184 nonterrorists, including the occupants of the hijacked
+        ./technical/911report/chapter-13.5.txt:                nonterrorists died in the crash of United Airlines Flight 93 in Pennsylvania. FBI
+        ```
+        
 
+    + The second example involves searching for "first class" in techincal
 
-<img width="1710" alt="Screenshot 2022-10-31 at 7 28 42 PM" src="https://user-images.githubusercontent.com/114549600/199145522-b044bd91-6685-471f-ad31-88adeb11b831.png">
+        
+        `grep -r "first class" ./technical/*`
+        
+        
+        
+        The output was as follows - 
+        
+        
+        ```
+        ./technical/911report/chapter-13.2.txt:                Bobbi Arestegui in first class; Sara Low and Jean Roger in business class; Dianne
+        ./technical/911report/chapter-13.2.txt:                assist in first class if needed. See AAL report, "Flight Attendant Jump Seat
+        ./technical/911report/chapter-13.2.txt:                cabin service in first class; with Amy King and Robert Fangman in business class;
+        ./technical/911report/chapter-13.2.txt:                first class. See Don Dillman briefing (Nov. 18, 2003); Bob Jordan briefing (Nov. 20,
+        ./technical/911report/chapter-13.2.txt:                hijackers arrayed themselves similarly: two seated in first class close to the
+        ./technical/911report/chapter-13.2.txt:                been in first class; and Kenneth Lewis would have been in the main cabin. On cabin
+        ./technical/911report/chapter-13.2.txt:                Deborah Welsh (first class, seat J1 at takeoff); Sandra Bradshaw (coach, seat J5);
+        ./technical/911report/chapter-13.2.txt:                Wanda Green (first class, seat J4); Lorraine Bay (coach, seat J3); and CeeCee Lyles
+        ./technical/911report/chapter-1.txt:    At 7:50, Majed Moqed and Khalid al Mihdhar boarded the flight and were seated in 12A and 12B in coach. Hani Hanjour, assigned to seat 1B (first class), soon followed. The Hazmi brothers, sitting in 5E and 5F, joined Hanjour in the first-class cabin.
+        ./technical/911report/chapter-1.txt:    Reports from two flight attendants in the coach cabin, Betty Ong and Madeline "Amy" Sweeney, tell us most of what we know about how the hijacking happened. As it began, some of the hijackers-most likely Wail al Shehri and Waleed al Shehri, who were seated in row 2 in first class-stabbed the two unarmed flight attendants who would have been preparing for cabin service.
+        ./technical/911report/chapter-1.txt:    Sweeney calmly reported on her line that the plane had been hijacked; a man in first class had his throat slashed; two flight attendants had been stabbed-one was seriously hurt and was on oxygen while the other's wounds seemed minor; a doctor had been requested; the flight attendants were unable to contact the cockpit; and there was a bomb in the cockpit. Sweeney told Woodward that she and Ong were trying to relay as much information as they could to people on the ground.
+        ./technical/911report/chapter-1.txt:    At 8:41, Sweeney told Woodward that passengers in coach were under the impression that there was a routine medical emergency in first class. Other flight attendants were busy at duties such as getting medical supplies while Ong and Sweeney were reporting the events.
+        ./technical/911report/chapter-1.txt:    Because several passengers on United 93 described three hijackers on the plane, not four, some have wondered whether one of the hijackers had been able to use the cockpit jump seat from the outset of the flight. FAA rules allow use of this seat by documented and approved individuals, usually air carrier or FAA personnel. We have found no evidence indicating that one of the hijackers, or anyone else, sat there on this flight. All the hijackers had assigned seats in first class, and they seem to have used them. We believe it is more likely that Jarrah, the crucial pilot-trained member of their team, remained seated and inconspicuous until after the cockpit was seized; and once inside, he would not have been visible to the passengers.
+        ./technical/911report/chapter-1.txt:    At 9:57, the passenger assault began. Several passengers had terminated phone calls with loved ones in order        to join the revolt. One of the callers ended her message as follows:"Everyone's running up to first class. I've got to go. Bye."
+        ./technical/911report/chapter-5.txt:                Hong Kong aboard a U.S. airliner. He flew in first class, which he realized was a
+        ./technical/911report/chapter-7.txt:                While this travel may have been a casing flight-Shehri traveled in first class on
+        ./technical/911report/chapter-7.txt:                the end of June. Each traveled in first class, on United Airlines. For the east-west
+        ./technical/911report/chapter-7.txt:                flew in first class on the same type of aircraft they would hijack on 9/11 (a Boeing
+        ./technical/biomed/1471-2164-3-9.txt:        classes. The first class is comprised of short coiled-coil
+        ./technical/biomed/1471-2121-3-18.txt:        including the first class of adaptor proteins with SH2 or
+        ./technical/government/Gen_Account_Office/gg96118.txt:first class in September 1995, the GPRA training has been
+        ./technical/government/Media/Good_guys_reward.txt:After graduating in CUNY Law School's first class in 1986, he
+        ./technical/plos/pmed.0020002.txt:        coccidioidomycosis. The first class is the polyenes, with amphotericin B desoxycholate and
+        ./technical/plos/journal.pbio.0030102.txt:        With their strange morphology, vent tubeworms were first classified as a novel phylum,
+        ```
+        
+    + The last example involves searching for a word that does not exist in the files, "hello" -
 
-
-<img width="456" alt="Screenshot 2022-10-31 at 7 28 57 PM" src="https://user-images.githubusercontent.com/114549600/199145543-8ac0b88c-ccc4-42fb-b38c-938200a93349.png">
+        
+        `grep -r "hello" ./technical/*`
+        
+        This does not result in an output window because hello does not exist in the files
 
 
 
