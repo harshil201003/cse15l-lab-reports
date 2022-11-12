@@ -15,16 +15,16 @@ The terminal code has been provided below.
     `grep -w "string" (filename)`
 
 
-  + For the first example, the input command was as follows - 
+    + For the first example, the input command was as follows - 
 
 
-    `grep -w "four" technical/911report/chapter-1.txt`
+        `grep -w "four" technical/911report/chapter-1.txt`
 
 
-    The output windows has been given below for the first example -
+        The output windows has been given below for the first example -
 
 
-    ```
+        ```
         The four men passed through the security checkpoint, owned by United Airlines and operated under contract by Argenbright Security. Like the checkpoints in Boston, it lacked closed-circuit television surveillance so there is no documentary evidence to indicate when the hijackers passed through the checkpoint, what alarms may have been triggered, or what security procedures were administered. The FAA interviewed the screeners later; none recalled anything unusual or suspicious.
         The four men boarded the plane between 7:39 and 7:48. All four had seats in the first-class cabin; their plane had no business-class section. Jarrah was in seat 1B, closest to the cockpit; Nami was in 3C, Ghamdi in 3D, and Haznawi in 6B.
         The 19 men were aboard four transcontinental flights.
@@ -36,18 +36,22 @@ The terminal code has been provided below.
         Controllers track airliners such as the four aircraft hijacked on 9/11 primarily by watching the data from a signal emitted by each aircraft's transponder equipment. Those four planes, like all aircraft traveling above 10,000 feet, were required to emit a unique transponder signal while in flight.
         On 9/11, the terrorists turned off the transponders on three of the four hijacked aircraft. With its transponder off, it is possible, though more difficult, to track an aircraft by its primary radar returns. But unlike transponder data, primary radar returns do not show the aircraft's identity and altitude. Controllers at centers rely so heavily on transponder signals that they usually do not display primary radar returns on their radar scopes. But they can change the configuration of their scopes so they can see primary radar returns. They did this on 9/11 when the transponder signals for three of the aircraft disappeared.
         In summary, NEADS received notice of the hijacking nine minutes before it struck the North Tower. That nine minutes' notice before impact was the most the military would receive of any of the four hijackings. 
-    ```
+        ```
 
 
 
-  + Another example of searching a part of the word -
+    + Another example of searching a part of the word -
 
 
-      `grep -w "Pres" technical/911report/preface.txt`
+        `grep -w "Pres" technical/911report/preface.txt`
 
 
 
-      This does not reslt in an answer because there is no complete word "Pres" in preface.txt
+        This does not reslt in an answer because there is no complete word "Pres" in preface.txt
+
+
+    + A full word like "President", however results in the word being found.
+
 
 
       `grep -w "President" technical/911report/preface.txt`
@@ -63,7 +67,7 @@ The terminal code has been provided below.
       ```
 
 
-The second function we will be talking about here will be `grep -i`. It is case insensitive. It finds all the words depite the capitalization. It can be really helpful because it helps eliminate the chances of not finding a certain element because of capitalization. Examples have been provided below - 
+2. The second function we will be talking about here will be `grep -i`. It is case insensitive. It finds all the words depite the capitalization. It can be really helpful because it helps eliminate the chances of not finding a certain element because of capitalization. Examples have been provided below - 
 
 
 <img width="647" alt="Screenshot 2022-10-31 at 7 02 58 PM" src="https://user-images.githubusercontent.com/114549600/199142932-8c7b596f-8d4c-4db2-a0c5-08c8e03b0d5e.png">
