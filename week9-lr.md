@@ -1,52 +1,47 @@
 # Week 9 Lab Report
 
-## Grade.sh File -
+Grade.sh file has been provided below -
 
 ```
-# Create your grading script here
-
-set -e
-
 rm -rf student-submission
-git clone $1 student-submission 
 
-cp TestListExamples.java student-submission
+git clone $1 student-submission
 
-cd student-submission
-
-if [[ -f student-submission/ListExamples.java]];
+if [ -f ./student-submission/ListExamples.java ]
 then
-    echo "Found ListExamples.java!"
-else 
-    echo "File ListExamples.java not found!"
+    echo "Found file!"
+else
+    echo "File not found"
     exit 1
 fi
 
-set +e  
+cp ./TestListExamples.java ./student-submission
+cp -r ./lib ./student-submission
 
-cp ../TestListExamples.java ./
+cd ./student-submission
 
-javac ListExamples.java
-javac TestListExamples.java
+javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 
-if [[ $? -eq 0 ]];
-then 
-    javac -cp .:../lib/hamcrest-core-1.3.jar:../lib/junit-4.13.2.jar *.java
-    java -cp .:../lib/hamcrest-core-1.3.jar:../lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples
-else
-    echo "Files can't compile!!!"
-    exit 2
-fi
-
-java -cp .:../lib/hamcrest-core-1.3.jar:../lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples > grades.txt
-
-if [[ $? -eq 0]];
+if [ $? -eq 0 ]
 then
-    echo "Tests Passed!"
-    exit
+    echo "Successfully Complied!"
 else
-    echo "Tests not Passed!"
-    exit 3
+    echo "Compile Error"
+    echo $?
+    exit 1
 fi
+
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples > results.txt
+
+echo "Test output:"
+grep -i "test" results.txt
 ```
+
+Screenshots of three different outputs have also been provided below - 
+
+
+<img width="737" alt="Screenshot 2022-11-28 at 12 24 02 AM" src="https://user-images.githubusercontent.com/114549600/204229058-363075bd-dc96-4cac-9058-283e93bf9074.png">
+
+
+
 
