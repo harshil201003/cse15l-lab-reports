@@ -6,14 +6,31 @@
     The keystrokes to make the edit of adding a print statement are as follows - 
     
     
-    + 15j - Goes down by 15 lines
-    + 7e - Skips to the end of the 7th word - "{" in our case
-    + i - enters insert mode
+    + 115e - goes to the desired word
+
+
+    <img width="456" alt="Screenshot 2022-12-02 at 5 30 16 PM" src="https://user-images.githubusercontent.com/114549600/205415988-e837a029-cdfb-4af3-9a88-      f01f2b4b66c4.png">
+
+    
     + l - goes to the left of {
+    + i - enters insert mode
+    
+
+    <img width="482" alt="Screenshot 2022-12-02 at 5 31 39 PM" src="https://user-images.githubusercontent.com/114549600/205416065-239c7a92-614d-4286-8374-      8489043388e3.png">
+    
+    
     + tab tab - indents cursor to the correct place
-    + System.out.println(f.toString() + " is a directory"); - Adds the desired line
-    + esc - exits insert mode
-    + :wq - saves and quits
+    
+
+    <img width="471" alt="Screenshot 2022-12-02 at 5 33 59 PM" src="https://user-images.githubusercontent.com/114549600/205416189-db97da25-0498-41c5-90ae-      8652837f83ea.png">
+
+    
+    + CMD + V ---> (System.out.println(f.toString() + " is a directory");) - Pastes the desired line in the code
+
+    <img width="565" alt="Screenshot 2022-12-02 at 5 35 36 PM" src="https://user-images.githubusercontent.com/114549600/205416240-711e742c-8ac8-452b-96bc-      ba72d8a80c3c.png">
+
+    + esc - exits insert mode and enters normal mode
+    + :x - saves and quits
     
     
     These keystrokes make the desired change on vim. They are not below 30 because the print line is exceeding 50 just by itself. 
