@@ -43,6 +43,7 @@ CMD + V ---> (System.out.println(f.toString() + " is a directory");) - Pastes th
 
 Step 5)
 
+<img width="1254" alt="Screenshot 2022-11-14 at 6 13 43 PM" src="https://user-images.githubusercontent.com/114549600/205416417-812e1e23-2114-429b-a8d1-74d44c16b4c1.png">
 
 esc - exits insert mode and enters normal mode
 :x - saves and quits
