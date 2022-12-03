@@ -11,7 +11,8 @@ Step 1)
 115e - goes to the desired word
 
 
-<img width="456" alt="Screenshot 2022-12-02 at 5 30 16 PM" src="https://user-images.githubusercontent.com/114549600/205415988-e837a029-cdfb-4af3-9a88-      f01f2b4b66c4.png">
+<img width="463" alt="Screenshot 2022-12-02 at 5 43 58 PM" src="https://user-images.githubusercontent.com/114549600/205416685-5138c6a9-eb50-43b4-a0d4-fcab0b976989.png">
+
 
 
 Step 2)
@@ -21,7 +22,8 @@ l - goes to the left of {
 i - enters insert mode
 
 
-<img width="482" alt="Screenshot 2022-12-02 at 5 31 39 PM" src="https://user-images.githubusercontent.com/114549600/205416065-239c7a92-614d-4286-8374-      8489043388e3.png">
+<img width="486" alt="Screenshot 2022-12-02 at 5 45 47 PM" src="https://user-images.githubusercontent.com/114549600/205416691-1902d559-bbe9-4bbd-a7b3-f51a1d2506c3.png">
+
 
 
 Step 3) 
@@ -30,7 +32,8 @@ Step 3)
 tab tab - indents cursor to the correct place
 
 
-<img width="471" alt="Screenshot 2022-12-02 at 5 33 59 PM" src="https://user-images.githubusercontent.com/114549600/205416189-db97da25-0498-41c5-90ae-      8652837f83ea.png">
+<img width="478" alt="Screenshot 2022-12-02 at 5 46 16 PM" src="https://user-images.githubusercontent.com/114549600/205416694-eedb7e5b-874d-4e02-8701-2f27cdb81dd4.png">
+
 
 
 Step 4) 
@@ -38,15 +41,19 @@ Step 4)
 
 CMD + V ---> (System.out.println(f.toString() + " is a directory");) - Pastes the desired line in the code
 
-<img width="565" alt="Screenshot 2022-12-02 at 5 35 36 PM" src="https://user-images.githubusercontent.com/114549600/205416240-711e742c-8ac8-452b-96bc-      ba72d8a80c3c.png">
+
+<img width="506" alt="Screenshot 2022-12-02 at 5 47 00 PM" src="https://user-images.githubusercontent.com/114549600/205416701-a303d4ba-c18e-468a-be33-72dd66afb905.png">
 
 
 Step 5)
 
-<img width="1254" alt="Screenshot 2022-11-14 at 6 13 43 PM" src="https://user-images.githubusercontent.com/114549600/205416417-812e1e23-2114-429b-a8d1-74d44c16b4c1.png">
 
 esc - exits insert mode and enters normal mode
 :x - saves and quits
+
+
+<img width="702" alt="Screenshot 2022-12-02 at 5 46 36 PM" src="https://user-images.githubusercontent.com/114549600/205416743-a3583678-3809-4385-9d9f-9be35ebb5f6d.png">
+
 
 
 These keystrokes make the desired change on vim. They are not below 30 because the print line is exceeding 50 just by itself. 
