@@ -19,7 +19,10 @@ Step 2)
 
 
 l - goes to the left of {
+
 i - enters insert mode
+
+enter - goes down a line
 
 
 <img width="486" alt="Screenshot 2022-12-02 at 5 45 47 PM" src="https://user-images.githubusercontent.com/114549600/205416691-1902d559-bbe9-4bbd-a7b3-f51a1d2506c3.png">
