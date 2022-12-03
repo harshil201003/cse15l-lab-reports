@@ -52,6 +52,7 @@ Step 5)
 
 
 esc - exits insert mode and enters normal mode
+
 :x - saves and quits
 
 
