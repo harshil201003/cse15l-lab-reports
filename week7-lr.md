@@ -5,6 +5,11 @@
 
 The keystrokes to make the edit of adding a print statement are as follows - 
 
+
+``` 
+115e l i ENTER TAB TAB CMD-V ESC :x
+```
+
 Step 1) 
 
 
